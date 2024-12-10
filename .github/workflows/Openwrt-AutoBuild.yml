@@ -112,6 +112,7 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
+        sudo -E apt update -y
         sudo -E apt install python2.7 -y
         sudo -E apt-get -qq update
         sudo -E apt-get -qq upgrade
